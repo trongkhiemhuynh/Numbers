@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HTKNumber/NumberViewController.m"
-            timestampString = "498298355.943463"
+            timestampString = "515877706.634692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-initNumber"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HTKNumber/NumberViewController.m"
-            timestampString = "498298355.943463"
+            timestampString = "515877358.275934"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "-initNumber"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HTKNumber/NumberViewController.m"
-            timestampString = "498298355.943463"
+            timestampString = "515877706.634692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "-initNumber"
             landmarkType = "5">
          </BreakpointContent>
@@ -71,32 +71,80 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[NumberViewController btnNewGame]"
-                  moduleName = "HTKNumber"
+                  moduleName = "HTKNumber&amp;Color"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khiemhuynh/Desktop/HTKNumber/HTKNumber/NumberViewController.h"
-                  timestampString = "498046312.355536"
+                  urlString = "file:///Users/KhiemHuynh/Google%20Drive/KHIEMHT/Projects/HTKNumber/HTKNumber/NumberViewController.h"
+                  timestampString = "515878169.18986"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
                   endingLineNumber = "27"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[NumberViewController setBtnNewGame:]"
-                  moduleName = "HTKNumber"
+                  moduleName = "HTKNumber&amp;Color"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khiemhuynh/Desktop/HTKNumber/HTKNumber/NumberViewController.h"
-                  timestampString = "498046312.356462"
+                  urlString = "file:///Users/KhiemHuynh/Google%20Drive/KHIEMHT/Projects/HTKNumber/HTKNumber/NumberViewController.h"
+                  timestampString = "515878169.189967"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
                   endingLineNumber = "27"
-                  offsetFromSymbolStart = "64">
+                  offsetFromSymbolStart = "49">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HTKNumber/NumberViewController.m"
+            timestampString = "515877706.634692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-checkAnswer:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HTKNumber/NumberViewController.m"
+            timestampString = "515877706.634692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-checkAnswer:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HTKNumber/NumberViewController.m"
+            timestampString = "515877813.198353"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-checkAnswer:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
