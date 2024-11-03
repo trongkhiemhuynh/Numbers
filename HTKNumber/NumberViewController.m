@@ -8,11 +8,11 @@
 
 #import "NumberViewController.h"
 
-const int TIME_LIMIT = 3;
+const int TIME_LIMIT = 7;
 
 @interface NumberViewController () {
     int timeLimit;
-    int randBtn;
+    int randomPositionResultValue;
     int countScore;
     NSTimer *timer;
     
@@ -54,8 +54,9 @@ const int TIME_LIMIT = 3;
     
     num3 = numRand2 - numRand1; // ket qua dung;
     
-    /* random number */
+    /* end random number */
     
+    // MARK: - extend for multiple and divide?
     if (num3 < 0) {
         self.lblCac.text = @"-";
         num3 *= -1;
@@ -63,30 +64,32 @@ const int TIME_LIMIT = 3;
         self.lblCac.text = @"+";
     }
     
-    // random button choose
+    // MARK: - random button choose
+    randomPositionResultValue = [self randomNumber:3];
     
-    randBtn = [self randomNumber];
-    
-    switch (randBtn) {
+    switch (randomPositionResultValue) {
         case 1:
-            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateHighlighted];
-            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3+1] forState:UIControlStateHighlighted];
-            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3+2] forState:UIControlStateHighlighted];
+            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateNormal];
+            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3 + [self randomNumber:100]] forState:UIControlStateNormal];
+            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3 + [self randomNumber:100]] forState:UIControlStateNormal];
             break;
         case 2:
-            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3 - 1] forState:UIControlStateHighlighted];
-            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateHighlighted];
-            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3 + 1] forState:UIControlStateHighlighted];
+            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3 - [self randomNumber:100]] forState:UIControlStateNormal];
+            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateNormal];
+            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3 + [self randomNumber:100]] forState:UIControlStateNormal];
             break;
             
         case 3:
-            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3 - 2] forState:UIControlStateHighlighted];
-            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3 - 1] forState:UIControlStateHighlighted];
-            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateHighlighted];
+            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3 - [self randomNumber:100]] forState:UIControlStateNormal];
+            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3 - [self randomNumber:100]] forState:UIControlStateNormal];
+            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateNormal];
             break;
             
         default:
-            break;
+//            break;
+            [self.btn1 setTitle:[NSString stringWithFormat:@"%d",num3] forState:UIControlStateNormal];
+            [self.btn2 setTitle:[NSString stringWithFormat:@"%d",num3+[self randomNumber:100]] forState:UIControlStateNormal];
+            [self.btn3 setTitle:[NSString stringWithFormat:@"%d",num3+[self randomNumber:100]] forState:UIControlStateNormal];
     }
     
     self.lblNumber1.text = [NSString stringWithFormat:@"%d",numRand1];
@@ -128,7 +131,7 @@ const int TIME_LIMIT = 3;
     
     if (timeLimit > 0) {
         
-        if ([self checkAnswer:randBtn]) {
+        if ([self checkAnswer:randomPositionResultValue]) {
 
                 [self setScore:timeLimit];
                 [self resetConfig];
@@ -154,9 +157,10 @@ const int TIME_LIMIT = 3;
     
     [self resetConfig];
     
-    self.lblStatus.text = @"GAME OVER";
+    self.lblStatus.text = @"GAME OVER!!!";
     [self.btnNewGame setUserInteractionEnabled:YES];
     
+    // MARK: How to save score to cloud Apple? file shared
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     NSString *strScore = [defaults objectForKey:@"highest"];
@@ -202,9 +206,9 @@ const int TIME_LIMIT = 3;
     self.btn3.tag = 0;
 }
 
-- (int)randomNumber {
-    int num = arc4random()%3 + 1;
-    return num;
+- (int)randomNumber:(int)upperBound {
+    // MARK: - used function random built-in OS in range 1...3
+    return arc4random_uniform(upperBound);
 }
 
 - (void)didReceiveMemoryWarning {

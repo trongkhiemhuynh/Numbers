@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Numbers & Colors";
+    // MARK: - Addition more text title- okey
+    self.title = @"Numbers & Colors \n Numerology yours";
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *scoreHighest = [defaults objectForKey:@"highest"];

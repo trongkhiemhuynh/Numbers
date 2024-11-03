@@ -17,6 +17,7 @@
 		2EF932341DAEC6B800028F73 /* HTKNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF932331DAEC6B800028F73 /* HTKNumberTests.m */; };
 		2EF9323F1DAEC6B800028F73 /* HTKNumberUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9323E1DAEC6B800028F73 /* HTKNumberUITests.m */; };
 		2EF9324E1DAECA7B00028F73 /* NumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9324D1DAECA7B00028F73 /* NumberViewController.m */; };
+		C2B0A3692CD74E570050387B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2B0A3682CD74E570050387B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		2EF932401DAEC6B800028F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF9324C1DAECA7B00028F73 /* NumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberViewController.h; sourceTree = "<group>"; };
 		2EF9324D1DAECA7B00028F73 /* NumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberViewController.m; sourceTree = "<group>"; };
+		C2B0A3682CD74E570050387B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		2EF9320D1DAEC6B800028F73 = {
 			isa = PBXGroup;
 			children = (
+				C2B0A3682CD74E570050387B /* README.md */,
 				2EF932181DAEC6B800028F73 /* HTKNumber */,
 				2EF932321DAEC6B800028F73 /* HTKNumberTests */,
 				2EF9323D1DAEC6B800028F73 /* HTKNumberUITests */,
@@ -217,7 +220,7 @@
 				TargetAttributes = {
 					2EF932151DAEC6B800028F73 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7755R4CX4U;
+						ProvisioningStyle = Manual;
 					};
 					2EF9322E1DAEC6B800028F73 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -234,6 +237,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -256,6 +260,7 @@
 			files = (
 				2EF932291DAEC6B800028F73 /* LaunchScreen.storyboard in Resources */,
 				2EF932261DAEC6B800028F73 /* Assets.xcassets in Resources */,
+				C2B0A3692CD74E570050387B /* README.md in Resources */,
 				2EF932241DAEC6B800028F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +433,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HTKNumber/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = KHIEMHT.HTKNumber1;
+				PRODUCT_BUNDLE_IDENTIFIER = htk.vn.numerology;
 				PRODUCT_NAME = "HTKNumber&Color";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -442,11 +451,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HTKNumber/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = KHIEMHT.HTKNumber1;
+				PRODUCT_BUNDLE_IDENTIFIER = htk.vn.numerology;
 				PRODUCT_NAME = "HTKNumber&Color";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

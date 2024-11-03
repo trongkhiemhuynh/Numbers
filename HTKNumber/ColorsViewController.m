@@ -25,6 +25,16 @@
     
     self.viewColor1.layer.cornerRadius = 35.0;
     self.viewColor2.layer.cornerRadius = 35.0;
+    
+    UIView *subView = [[UIView alloc] initWithFrame:self.view.frame];
+    UILabel *lblMaintenance = [[UILabel alloc] initWithFrame:subView.frame];
+    [subView addSubview:lblMaintenance];
+    [self.view addSubview:subView];
+    
+    lblMaintenance.text = @"This page is in progress...";
+    lblMaintenance.textAlignment = NSTextAlignmentCenter;
+    subView.backgroundColor = [UIColor grayColor];
+    lblMaintenance.textColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {

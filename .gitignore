@@ -1,0 +1,13 @@
+Pods/
+*.DS_Store
+.build/
+xcshareddata/
+xcuserdata/
+## Build generated
+build/
+DerivedData/
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+codi-fix-demo.xcodeproj/xcuserdata/*
+codi-fix-demo.xcodeproj/project.xcworkspace/xcuserdata/*
