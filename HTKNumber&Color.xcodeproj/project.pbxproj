@@ -110,19 +110,15 @@
 		2EF932181DAEC6B800028F73 /* HTKNumber */ = {
 			isa = PBXGroup;
 			children = (
+				C2B0A36C2CD76FEE0050387B /* Model */,
+				C2B0A36B2CD76FC60050387B /* ViewModel */,
+				C2B0A36A2CD76FAE0050387B /* View */,
+				C2B0A36D2CD770120050387B /* Storyboard */,
 				2EF9321C1DAEC6B800028F73 /* AppDelegate.h */,
 				2EF9321D1DAEC6B800028F73 /* AppDelegate.m */,
-				2EF9321F1DAEC6B800028F73 /* HTKNumberColorViewController.h */,
-				2EF932201DAEC6B800028F73 /* HTKNumberColorViewController.m */,
-				2EF932221DAEC6B800028F73 /* Main.storyboard */,
 				2EF932251DAEC6B800028F73 /* Assets.xcassets */,
-				2EF932271DAEC6B800028F73 /* LaunchScreen.storyboard */,
 				2EF9322A1DAEC6B800028F73 /* Info.plist */,
 				2EF932191DAEC6B800028F73 /* Supporting Files */,
-				2EF9324C1DAECA7B00028F73 /* NumberViewController.h */,
-				2EF9324D1DAECA7B00028F73 /* NumberViewController.m */,
-				2E7AA81D1DB36F42006F32D5 /* ColorsViewController.h */,
-				2E7AA81E1DB36F42006F32D5 /* ColorsViewController.m */,
 			);
 			path = HTKNumber;
 			sourceTree = "<group>";
@@ -151,6 +147,42 @@
 				2EF932401DAEC6B800028F73 /* Info.plist */,
 			);
 			path = HTKNumberUITests;
+			sourceTree = "<group>";
+		};
+		C2B0A36A2CD76FAE0050387B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EF9321F1DAEC6B800028F73 /* HTKNumberColorViewController.h */,
+				2EF932201DAEC6B800028F73 /* HTKNumberColorViewController.m */,
+				2EF9324C1DAECA7B00028F73 /* NumberViewController.h */,
+				2EF9324D1DAECA7B00028F73 /* NumberViewController.m */,
+				2E7AA81D1DB36F42006F32D5 /* ColorsViewController.h */,
+				2E7AA81E1DB36F42006F32D5 /* ColorsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2B0A36B2CD76FC60050387B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2B0A36C2CD76FEE0050387B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2B0A36D2CD770120050387B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2EF932221DAEC6B800028F73 /* Main.storyboard */,
+				2EF932271DAEC6B800028F73 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +470,7 @@
 				INFOPLIST_FILE = HTKNumber/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = htk.vn.numerology;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.htk.numerology;
 				PRODUCT_NAME = "HTKNumber&Color";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -456,7 +488,7 @@
 				INFOPLIST_FILE = HTKNumber/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = htk.vn.numerology;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.htk.numerology;
 				PRODUCT_NAME = "HTKNumber&Color";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
